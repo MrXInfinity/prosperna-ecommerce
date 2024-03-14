@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Prosperna React Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an ecommerce website utilizing ReactJS as the framework of choice for the frontend. It uses the Local Storage API to store both the store and the cart.
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone this project
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+  git clone https://reactrouter.com/en/main/start/tutorial
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Open the project and install the dependencies
+
+```
+npm install
+```
+
+3. Run the project and then explore :>
+
+```
+npm run dev
+```
+
+## Challenges & Learnings
+
+This project was certainly challenging but also fun. One challenge that I faced was trying to architect the stores while using the Local Storage API. It was troublesome at first, trying to configure its types and approach but I was certainly happy with what I came up with.
+
+## References of Tools Used:
+
+- [Source Material](https://github.com/Prosperna/prosperna-ecom-test/tree/main)
+- [Vite](https://vitest.dev)
+- [React](https://react.dev)
+- [TailwindCSS](https://tailwindcss.com/docs/installation)
+- [React Router](https://reactrouter.com/en/main/start/tutorial)
